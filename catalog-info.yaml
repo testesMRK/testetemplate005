@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: portal-web
+  description: Frontend web usado pelos clientes para acompanhar pedidos
+  annotations:
+    github.com/project-slug: sua-org/portal-web
+  tags:
+    - frontend
+    - react
+spec:
+  type: website
+  lifecycle: experimental
+  owner: user:default/jonas
+  system: plataforma-ecommerce
+  consumesApis:
+    - pedidos-rest-api
